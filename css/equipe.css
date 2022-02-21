@@ -1,0 +1,38 @@
+:root {
+    --marsala: rgb(131, 1, 1);
+    --fundo: rgb(238, 238, 238);
+}
+
+.equipe {
+    background-color: var(--fundo);
+    padding: 10px 0;
+}
+
+.pessoa {
+    border: 1px solid var(--marsala);
+    display: flex;
+    margin: 20px 0;
+    
+}
+
+.pessoa img {
+    max-width: 300px;
+    width: 100%;
+    border-right: 1px solid var(--marsala);
+    margin: 0 5px;
+    padding: 1px;
+}
+
+button {
+    background-color: var(--marsala);
+}
+
+i {
+    margin: 0 5px 0 0;
+}
+
+.imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
