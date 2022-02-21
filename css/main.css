@@ -1,5 +1,5 @@
 :root {
-  --marsala: #830101;
+  --marsala: rgb(131, 1, 1);
   --fundo: rgb(238, 238, 238);
 }
 
@@ -54,10 +54,9 @@ body {
   background-color: var(--fundo);
 }
 
-.corpo {
+.container-fluid {
   background-color: var(--fundo);
   max-width: 95%;
-
 }
 
 .container {
@@ -95,7 +94,6 @@ nav {
   max-width: 400px;
   height: 100%;
   background-color: var(--fundo);
-
 }
 
 .logo img {
@@ -107,59 +105,7 @@ header {
   text-align: center;
 }
 
-.banner {
-  margin: 50px 0;
-  width: 100%;
-  background-color: var(--fundo);
-  padding: 7px 0 3px 0;
-}
 
-.banner img {
-  width: 50%;
-  background-color: var(--fundo);
-}
-
-.titulo p {
-  display: none;
-}
-
-.conteudo {
-  color: var(--fundo);
-  font-size: 30px;
-  margin: 50px 0;
-  display: block;
-  text-align: justify;
-}
-
-.conteudo h3 {
-  font-size: 60px;
-  padding: 15px 0;
-}
-
-.conteudo-esquerda {
-  width: 50%;
-  float: left;
-  background-color: var(--marsala);
-  padding: 0 10px;
-  animation: 1s ease-out 0s 1 slideInFromLeft;
-  font-family: "Sofia", sans-serif;
-}
-
-.conteudo-direita {
-  width: 50%;
-  float: right;
-  padding-left: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-left: solid 2px black;
-}
-
-.bloco {
-  position: relative;
-  animation: 1s ease-out 0s 1 slideInRight;
-}
 
 figure {
   position: relative;
@@ -170,18 +116,6 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.bloco figure img {
-  max-width: 80%;
-  max-height: 80%;
-  transition: 0.3s;
-}
-
-.bloco:hover img {
-  max-width: 100%;
-  max-height: 100%;
-  transition: 0.3s;
 }
 
 figcaption {
@@ -199,10 +133,6 @@ figcaption {
   align-items: center;
   justify-content: center;
   font-weight: 900;
-}
-
-.bloco:hover figcaption {
-  opacity: 1;
 }
 
 #rodape * {
