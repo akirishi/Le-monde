@@ -147,3 +147,17 @@ figcaption {
 #rodape a {
   text-decoration: none;
 }
+
+.criador {
+  display: flex;
+  width: 100%;
+}
+
+.criador a {
+  text-decoration: none;
+}
+
+.criador a:hover {
+  text-decoration: underline;
+  color: var(--marsala);
+}

@@ -19,6 +19,12 @@
     transition: 0.3s;
 }
 
+.temas {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .corpo-tema {
     display: flex;
     flex-direction: column;
