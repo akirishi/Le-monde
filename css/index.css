@@ -1,3 +1,8 @@
+:root {
+  --marsala: #830101;
+  --fundo: rgb(238, 238, 238);
+}
+
 .titulo p {
   display: none;
 }

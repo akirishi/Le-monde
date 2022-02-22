@@ -1,6 +1,6 @@
 :root {
   --marsala: rgb(131, 1, 1);
-  --fundo: rgb(238, 238, 238);
+  --fundo: rgb(102, 58, 58);
 }
 
 @keyframes slideInRight {
@@ -36,6 +36,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Sofia", sans-serif;
 }
 
 .carousel-caption h5, .carousel-caption p {
@@ -47,6 +48,35 @@
 body {
   height: 100%;
   margin-left: 2.5%;
+}
+
+menu.navbar {
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  background-color: var(--marsala);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar .btn {
+  width: 228px;
+  height: 194px;
+  transition: 0.3s;
+  font-family: "Sofia", sans-serif;
+  display: inline-block;
+  border-radius: 50%;
+  border: none;
+}
+
+.navbar .btn:hover {
+  font-size: 150%;
+  transition: 0.3s;
+  color: var(--marsala);
+  font-weight: 900;
+  border-radius: 0%;
+  background-color: white;
 }
 
 .carousel-item {
@@ -64,16 +94,7 @@ body {
   float: inline-start;
 }
 
-nav {
-  margin-top: 20px;
-  background-color: var(--marsala);
-  display: flex;
-  animation: 1s ease-out 0s 1 slideInFromAbove;
-  max-width: 100%;
-  justify-content: space-evenly;
-}
-
-#navbar input {
+footer input {
   transition: 0.3s;
   width: 213px;
   height: 100%;
@@ -81,7 +102,7 @@ nav {
   color: white;
 }
 
-#navbar input:hover {
+footer input:hover {
   font-size: 150%;
   padding: 5px 20px;
   background-color: var(--fundo);
@@ -89,23 +110,9 @@ nav {
   border-radius: 25%;
 }
 
-.logo {
-  width: 100%;
-  max-width: 400px;
-  height: 100%;
-  background-color: var(--fundo);
-}
-
-.logo img {
-  width: 100%;
-  background-color: var(--fundo);
-}
-
 header {
   text-align: center;
 }
-
-
 
 figure {
   position: relative;
