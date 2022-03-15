@@ -27,33 +27,24 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <section class="container-fluid">
+<<<<<<< Updated upstream
     <header class="sticky-top">
+=======
+    <header>
+>>>>>>> Stashed changes
       <nav id="navbar">
-        <div class="btn-group" role="group">
-          <div class="botao-menu">
-            <a href="index.html"><input type="button" class="btn btn-white" value="Home"></a>
-          </div>
-          <div class="botao-menu">
-            <a href="tema.html"><input type="button" class="btn btn-white" value="Temas"></a>
-          </div>
-        </div>
-        <div class="logo">
-          <a class="navbar-brand" href="index.html">
-            <img src="img/Logo-branca.jpg" alt="Logo">
-          </a>
-        </div>
-        <div class="btn-group" role="group">
-          <div class="botao-menu">
-            <a href="cardapios.html"><input type="button" class="btn btn-white" value="Cardápio"></a>
-          </div>
-          <div class="botao-menu">
-            <a href="fale-conosco.html"><input type="button" class="btn btn-white" value="Fale Conosco"></a>
-          </div>
-        </div>
+        <menu class="navbar">
+          <li><a href="index.html"><button class="btn btn-outline-light">Página Inicial</button></a></li>
+          <li><a href="tema.html"><button class="btn btn-outline-light">Temas</button></a></li>
+          <li><a href="index.html"><img class="logo" src="img/Logo-branca.jpg"></a></li>
+          <li><a href="cardapios.html"><button class="btn btn-outline-light">Cardápios</button></a></li>
+          <li><a href="fale-conosco.html"><button class="btn btn-outline-light">Fale Conosco</button></a></li>
+        </menu>
       </nav>
+<<<<<<< Updated upstream
     </header>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -69,21 +60,41 @@
             <h5>Pratos excelentes</h5>
             <p>Todo o sabor do mundo.</p>
           </div>
+=======
+      <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+>>>>>>> Stashed changes
         </div>
-        <div class="carousel-item">
-          <img src="img/prato-alemanha.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Pratos típicos de países ricos em culinária</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner.png" class="d-block w-100" alt="..." width="300px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Pratos excelentes</h5>
+              <p>Todo o sabor do mundo.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/prato-alemanha.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Pratos típicos de países ricos em culinária</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/prato-brasil.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="img/prato-brasil.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
+<<<<<<< Updated upstream
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev">
@@ -95,9 +106,23 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
-    <div class="conteudo">
-      <div class="conteudo-esquerda titulo">
+    </section>
+=======
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+    </header>
+>>>>>>> Stashed changes
+    <main class="conteudo">
+      <article class="conteudo-esquerda titulo">
         <h3 class="text-center">Sobre o Restaurante</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut odio nisl, condimentum a scelerisque eget,
           interdum lacinia dui. Morbi nec nibh vitae tellus luctus porttitor a ac arcu. Mauris diam sem, aliquam vitae
@@ -113,8 +138,8 @@
           scelerisque leo, eget efficitur nisl libero nec mauris. Nam sit amet velit mauris. In quis mauris mauris.
           Suspendisse dignissim, nibh quis posuere pellentesque, mauris sem feugiat ipsum, ac pharetra ipsum massa sit
           amet mauris. Donec quis quam dui.</p>
-      </div>
-      <div class="conteudo-direita index">
+      </article>
+      <section class="conteudo-direita index">
         <div class="bloco index">
           <figure>
             <img src="img/prato-do-dia.png"></img>
@@ -161,18 +186,18 @@
             </figure>
           </a>
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
+    </main>
+  </section>
   <footer id="rodape">
     <div class="criador">
       <a href="equipe.html">Desenvolvido pela Equipe de Marketing</a>
     </div>
     <div class="redes">
-      <a href="">Instagram</a>
-      <a href="">Twitter</a>
-      <a href="">Email</a>
-      <a href="">Whatsapp</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+      <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D">Twitter</a>
+      <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Email</a>
+      <a href="https://web.whatsapp.com/">Whatsapp</a>
     </div>
   </footer>
 </body>

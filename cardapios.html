@@ -29,33 +29,18 @@
 </head>
 
 <body>
-  <div class="container-fluid corpo">
+  <section class="container-fluid">
     <header>
       <nav id="navbar">
-        <div class="btn-group" role="group">
-          <div class="botao-menu">
-            <a href="index.html"><input type="button" class="btn btn-white" value="Home"></a>
-          </div>
-          <div class="botao-menu">
-            <a href="tema.html"><input type="button" class="btn btn-white" value="Temas"></a>
-          </div>
-        </div>
-        <div class="logo">
-          <a class="navbar-brand" href="index.html">
-            <img src="img/Logo-branca.jpg" alt="Logo">
-          </a>
-        </div>
-        <div class="btn-group" role="group">
-          <div class="botao-menu">
-            <a href="cardapios.html"><input type="button" class="btn btn-white" value="Cardápio"></a>
-          </div>
-          <div class="botao-menu">
-            <a href="fale-conosco.html"><input type="button" class="btn btn-white" value="Fale Conosco"></a>
-          </div>
-        </div>
+        <menu class="navbar">
+          <li><a href="index.html"><button class="btn btn-outline-light">Página Inicial</button></a></li>
+          <li><a href="tema.html"><button class="btn btn-outline-light">Temas</button></a></li>
+          <li><a href="index.html"><img class="logo" src="img/Logo-branca.jpg"></a></li>
+          <li><a href="cardapios.html"><button class="btn btn-outline-light">Cardápios</button></a></li>
+          <li><a href="fale-conosco.html"><button class="btn btn-outline-light">Fale Conosco</button></a></li>
+        </menu>
       </nav>
     </header>
-
     <div class="wrap">
       <div class="row">
         <div id="padrao" class="col visible">
@@ -64,7 +49,7 @@
             <figure class="cardapio">
               <img src="img/cardapio.png">
               <figcaption>
-                <h2>Prato da Alemanha</h2>
+                <h2>Prato base</h2>
               </figcaption>
             </figure>
           </div>
@@ -82,17 +67,18 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>
 
-  <footer id="rodape">
-    <div class="criador">
-      <p>Desenvolvido por Fabiano Corrêa</p>
-    </div>
-    <div class="redes">
-      <a href="">Instagram</a>
-      <a href="">Twitter</a>
-      <a href="">Email</a>
-      <a href="">Whatsapp</a>
-    </div>
-  </footer>
+    <footer id="rodape">
+      <div class="criador">
+        <a href="equipe.html">Desenvolvido pela Equipe de Marketing</a>
+      </div>
+      <div class="redes">
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D">Twitter</a>
+        <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Email</a>
+        <a href="https://web.whatsapp.com/">Whatsapp</a>
+      </div>
+    </footer>
+  </section>
 </body>
