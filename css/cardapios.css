@@ -1,61 +1,95 @@
 :root {
   --marsala: rgb(131, 1, 1);
+  --marsala-2: rgba(131,1,1,.4)
   --fundo: rgb(238, 238, 238);
 }
 
-.wrap {
-  margin: 20px 0;
-  background-color: var(--fundo);
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
-.row {
-  height: 500px;
-  max-height: 500px;
-}
-
-.col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.bloco {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid var(--marsala);
-  position: relative;
-  animation: 1s ease-out 0s 1 slideInRight;
-}
-
-.bloco h2 {
-  color: var(--marsala);
-}
-
-.bloco figure img {
-  max-width: 80%;
-  max-height: 80%;
-  transition: 0.3s;
-}
-
-.bloco:hover figcaption {
-  opacity: 1;
-}
-
-.bloco:hover img {
-  max-width: 100%;
-  max-height: 100%;
-  transition: 0.3s;
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 figure {
   width: 100%;
   height: 100%;
-  border: white;
+}
+
+figcaption{
+  background-color: rgba(131,1,1,.4);
+  color: white;
+}
+
+figcaption:hover {
+  opacity: 1;
+}
+
+section#conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+section#cardapios {
+  width: 49%;
+  margin: 20px 0;
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+section#cardapios figure {
+  height: 500px;
+}
+
+section#cardapios img {
+  max-width: 100%;
+  height: 100%;
+}
+
+section#info {
+  margin: 20px 0;
+  width: 49%;
+  animation: 1s ease-out 0s 1 slideInRight;
+}
+
+section#info article {
+  color: white;
+  font-weight: 900;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 0 10px;
   background-color: var(--marsala);
 }
 
-figure img {
-  width: 100%;
-  height: 100%;
+ul.regioes {
+  list-style-type: none;
+}
+
+ul.regioes li {
+  display: inline-block;
+  text-align: center;    
+}
+
+ul.regioes li p {
+  text-align: center;
+}
+
+ul.regioes ul li {
+  list-style-position: outside;
+  list-style-type: none;
+  display: list-item;
+
 }
